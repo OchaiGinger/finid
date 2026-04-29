@@ -1,8 +1,8 @@
 "use client";
 
-import { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { Shield, Loader2 } from 'lucide-react';
+import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { Shield, Loader2 } from "lucide-react";
 
 export function PageLoader() {
   const [loading, setLoading] = useState(true);
@@ -27,7 +27,7 @@ export function PageLoader() {
       "Establishing Encrypted Link...",
       "Syncing Protocol v2.4.0...",
       "Verifying Identity Hashes...",
-      "Access Granted."
+      "Access Granted.",
     ];
 
     let statusIdx = 0;
@@ -69,19 +69,22 @@ export function PageLoader() {
               <div className="w-20 h-20 rounded-2xl bg-[#B22222] flex items-center justify-center shadow-[0_0_40px_rgba(178,34,34,0.4)] relative">
                 <Shield className="w-10 h-10 text-white" />
                 {/* Spinning Ring */}
-                <div className="absolute inset-[-10px] rounded-full border-t-2 border-r-2 border-[#B22222]/40 animate-spin" style={{ animationDuration: '3s' }} />
+                <div
+                  className="absolute inset-[-10px] rounded-full border-t-2 border-r-2 border-[#B22222]/40 animate-spin"
+                  style={{ animationDuration: "3s" }}
+                />
               </div>
             </motion.div>
 
             {/* Branding */}
             <h1 className="text-3xl font-black tracking-tighter text-[#f0ead8] mb-8">
-              Fin<span style={{ color: themeRed }}>ID</span>
+              AGN<span style={{ color: themeRed }}>EXI</span>
             </h1>
 
             {/* Progress Bar Container */}
             <div className="w-full h-[2px] bg-white/5 rounded-full overflow-hidden mb-4">
-              <motion.div 
-                className="h-full bg-[#B22222]" 
+              <motion.div
+                className="h-full bg-[#B22222]"
                 style={{ width: `${progress}%` }}
                 transition={{ type: "spring", stiffness: 50 }}
               />

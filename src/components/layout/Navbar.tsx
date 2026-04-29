@@ -36,7 +36,7 @@ export function Navbar() {
             <Shield className="w-5 h-5 text-white" />
           </div>
           <span className="text-2xl font-black tracking-tighter text-[#f0ead8]">
-            Fin<span style={{ color: themeRed }}>ID</span>
+            AGN<span style={{ color: themeRed }}>EXI</span>
           </span>
         </Link>
 

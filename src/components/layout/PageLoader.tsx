@@ -66,8 +66,12 @@ export function PageLoader() {
               transition={{ duration: 0.5 }}
               className="mb-12 relative"
             >
-              <div className="w-20 h-20 rounded-2xl bg-[#B22222] flex items-center justify-center shadow-[0_0_40px_rgba(178,34,34,0.4)] relative">
-                <Shield className="w-10 h-10 text-white" />
+              <div className="w-20 h-20 rounded-2xl  flex items-center justify-center shadow-[0_0_40px_rgba(178,34,34,0.4)] relative">
+                <img
+                  src="/logo.png"
+                  alt="Agnexi Logo"
+                  className="h-9 w-auto object-contain"
+                />
                 {/* Spinning Ring */}
                 <div
                   className="absolute inset-[-10px] rounded-full border-t-2 border-r-2 border-[#B22222]/40 animate-spin"

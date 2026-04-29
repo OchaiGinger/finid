@@ -1,11 +1,20 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { Shield, Globe, Zap } from "lucide-react";
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+
 export function Footer() {
   const themeRed = "#B22222";
   const currentYear = new Date().getFullYear();
+
+  // Fix for Hydration Mismatch: Ensure time-dependent content only renders on client
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   const footerLinks = {
     Platform: [
@@ -29,7 +38,7 @@ export function Footer() {
   };
 
   return (
-    <footer className="bg-[#050101] border-t border-white/5 pt-24 pb-12 relative overflow-hidden">
+    <footer className="bg-[#050101] border-t border-white/5 pt-24 pb-12 relative overflow-hidden font-['Syne',sans-serif]">
       {/* GLOW EFFECT */}
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[80%] h-[300px] bg-[#B22222]/5 blur-[120px] rounded-full pointer-events-none" />
 
@@ -38,14 +47,16 @@ export function Footer() {
           {/* BRAND COLUMN */}
           <div className="col-span-full md:col-span-4">
             <Link href="/" className="flex items-center gap-2 mb-6 group">
-              <div className="w-8 h-8 rounded-lg bg-[#B22222] flex items-center justify-center shadow-[0_0_15px_rgba(178,34,34,0.4)]">
-                <Shield className="w-5 h-5 text-white" />
-              </div>
+              <img
+                src="/logo.png"
+                alt="Agnexi Logo"
+                className="h-9 w-auto object-contain"
+              />
               <span className="text-2xl font-black tracking-tighter text-[#f0ead8]">
                 AGN<span style={{ color: themeRed }}>EXI</span>
               </span>
             </Link>
-            <p className="text-[#f0ead8]/40 text-sm leading-relaxed max-w-[280px] font-light">
+            <p className="text-[#f0ead8]/40 text-sm leading-relaxed max-w-[280px] font-light font-mono">
               The autonomous financial identity protocol. Decentralized,
               portable, and secure by design.
             </p>
@@ -116,11 +127,13 @@ export function Footer() {
               <Globe className="w-3 h-3" />
               <span>
                 Standard Time:{" "}
-                {new Date().toLocaleTimeString([], {
-                  hour: "2-digit",
-                  minute: "2-digit",
-                  hour12: false,
-                })}{" "}
+                {mounted
+                  ? new Date().toLocaleTimeString([], {
+                      hour: "2-digit",
+                      minute: "2-digit",
+                      hour12: false,
+                    })
+                  : "--:--"}{" "}
                 UTC
               </span>
             </div>
@@ -133,7 +146,7 @@ export function Footer() {
 
         {/* MASSIVE DECORATIVE LOGO BACKGROUND */}
         <div className="absolute -bottom-12 left-1/2 -translate-x-1/2 pointer-events-none select-none opacity-[0.02]">
-          <h1 className="text-[20vw] font-black tracking-tighter leading-none text-white">
+          <h1 className="text-[20vw] font-black tracking-tighter leading-none text-white uppercase">
             Agnexi
           </h1>
         </div>

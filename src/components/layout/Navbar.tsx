@@ -32,8 +32,12 @@ export function Navbar() {
       <div className="container mx-auto flex items-center justify-between">
         {/* LOGO */}
         <Link href="/" className="flex items-center gap-2 group relative z-110">
-          <div className="w-9 h-9 rounded-lg bg-[#B22222] flex items-center justify-center shadow-[0_0_20px_rgba(178,34,34,0.3)] group-hover:shadow-[0_0_30px_rgba(178,34,34,0.6)] transition-all duration-500">
-            <Shield className="w-5 h-5 text-white" />
+          <div className="w-9 h-9 rounded-lg  flex items-center justify-center shadow-[0_0_20px_rgba(178,34,34,0.3)] group-hover:shadow-[0_0_30px_rgba(178,34,34,0.6)] transition-all duration-500">
+            <img
+              src="/logo.png"
+              alt="Agnexi Logo"
+              className="h-10 w-auto object-contain transition-all duration-500 group-hover:scale-105"
+            />
           </div>
           <span className="text-2xl font-black tracking-tighter text-[#f0ead8]">
             AGN<span style={{ color: themeRed }}>EXI</span>

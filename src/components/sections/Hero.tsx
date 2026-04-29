@@ -171,7 +171,7 @@ export function Hero() {
           {/* FOOTER SUBTEXT */}
           <div className="max-w-xl">
             <p className="reveal-item text-lg font-light leading-loose text-[#a09880]/60 font-mono">
-              FinID builds a living AI profile of your financial identity —
+              Agnexi builds a living AI profile of your financial identity —
               merging behavioral patterns into a single, high-trust credential.
             </p>
           </div>

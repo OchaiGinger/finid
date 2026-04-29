@@ -4,7 +4,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { PageLoader } from "@/components/layout/PageLoader";
 
 export const metadata: Metadata = {
-  title: "FinID | Premium Financial Identity",
+  title: "Agnexi | Premium Financial Identity",
   description: "AI-Powered Financial Identity Visualization and Trust Scoring.",
 };
 

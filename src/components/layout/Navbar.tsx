@@ -152,7 +152,7 @@ export function Navbar() {
         {/* System footer in mobile menu */}
         <div className="absolute bottom-10 left-0 right-0 text-center">
           <p className="text-[10px] font-mono text-white/20 uppercase tracking-[0.4em]">
-            FinID Protocol Secure Node
+            Agnexi Protocol Secure Node
           </p>
         </div>
       </div>

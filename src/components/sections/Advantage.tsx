@@ -18,7 +18,7 @@ const ADVANTAGES = [
     tag: "Self-sovereign",
     title: "Autonomous",
     content:
-      "FinID removes the middleman. Your financial reputation is encrypted and owned entirely by you, not the banks. Complexity made simple—so you stay in control of your digital footprint across every network.",
+      "Agnexi removes the middleman. Your financial reputation is encrypted and owned entirely by you, not the banks. Complexity made simple—so you stay in control of your digital footprint across every network.",
     image:
       "https://broadwayplatform.com/wp-content/uploads/2026/03/Frame-10-574x661.png",
   },
@@ -38,7 +38,7 @@ const ADVANTAGES = [
     tag: "AI-powered",
     title: "Intelligence",
     content:
-      "Serious performance behind every signal. FinID uses behavioral AI to anticipate opportunities and secure your assets before risks manifest. Enterprise-grade stability and innovation in one unified system.",
+      "Serious performance behind every signal. Agnexi uses behavioral AI to anticipate opportunities and secure your assets before risks manifest. Enterprise-grade stability and innovation in one unified system.",
     image:
       "https://broadwayplatform.com/wp-content/uploads/2026/03/Frame-12-574x680.png",
   },
@@ -255,7 +255,7 @@ export function AdvantagesSection() {
                   {/* Top bar */}
                   <div className="flex items-center justify-between">
                     <span className="f-mono text-[9px] uppercase tracking-[0.5em] text-[#B22222]">
-                      FinID · Advantages
+                      Agnexi · Advantages
                     </span>
                     {/* Progress dashes */}
                     <div className="flex gap-2 items-center">

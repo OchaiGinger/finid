@@ -12,35 +12,31 @@ if (typeof window !== "undefined") {
 
 const TEAM = [
   {
-    name: "David Natroshvili",
+    name: "Agnes Ekpor",
     role: "Founder & CEO",
     bio: "Visionary leader bridging the gap between traditional finance and decentralized identity systems.",
-    image:
-      "https://broadwayplatform.com/wp-content/uploads/2026/03/Frame-15-574x661.webp",
+    image: "./images/agnes_ekpor.png",
     speed: "0.1",
   },
   {
-    name: "Elena Vance",
-    role: "Chief Product Officer",
+    name: "Ajibola Daniel",
+    role: "Chief Operating Officer",
     bio: "Expert in behavioral AI and user experience, ensuring Agnexi remains intuitive yet powerful.",
-    image:
-      "https://broadwayplatform.com/wp-content/uploads/2026/03/Frame-10-574x661.png",
+    image: "./images/ajibola_daniel.png",
     speed: "0.2",
   },
   {
-    name: "Marcus Thorne",
-    role: "Head of Engineering",
+    name: "Festus Okon",
+    role: "Head of Design & Engineering",
     bio: "The architect behind our encrypted reputation engine and global network scalability.",
-    image:
-      "https://broadwayplatform.com/wp-content/uploads/2026/03/Frame-11-574x661.png",
+    image: "./images/festus_okon.png",
     speed: "0.15",
   },
   {
-    name: "Sarah Chen",
+    name: "Priscillia Alex",
     role: "Director of Strategy",
     bio: "Specializes in cross-border wealth regulations and institutional partnerships worldwide.",
-    image:
-      "https://broadwayplatform.com/wp-content/uploads/2026/03/Frame-12-574x680.png",
+    image: "./images/priscillia_alex.png",
     speed: "0.25",
   },
 ];
